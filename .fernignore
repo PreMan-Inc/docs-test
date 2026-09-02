@@ -12,3 +12,9 @@ docs/index.md
 
 # Hand-written narrative that has no equivalent in an OpenAPI document.
 docs/getting-started.md
+
+# Site name, description, theme and branding. PreMan seeds this file once with
+# a working default and would otherwise rewrite it on every release; listing it
+# here is how this repository takes ownership of how the site looks. The nav and
+# the page set stay generated, in mkdocs.yml.
+mkdocs.base.yml
