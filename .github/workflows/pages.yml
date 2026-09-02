@@ -1,0 +1,60 @@
+name: docs
+
+# PreMan writes mkdocs.yml and docs/**, then opens a pull request. Merging that
+# pull request is what triggers this workflow, so the published site is always a
+# merged, reviewed state of the reference — never an unreviewed branch.
+#
+# This file cannot be written by PreMan. The preman-guard GitHub App holds
+# contents:write but not workflows:write, so anything under .github/workflows
+# has to be committed by a person. That is the intended boundary: PreMan may
+# change what the site says, never how it is built or deployed.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time, and never cancel one midway: a cancelled
+# deploy-pages leaves the site serving a half-uploaded artifact.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - run: pip install -r requirements.txt
+
+      # Deliberately not --strict. A hand-written page that PreMan does not know
+      # about is absent from the generated nav, which mkdocs reports as a
+      # warning; under --strict that warning would fail the build and a
+      # generated docs pull request would take the whole site down.
+      - run: mkdocs build --site-dir _site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

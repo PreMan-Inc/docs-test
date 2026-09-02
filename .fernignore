@@ -1,0 +1,14 @@
+# Paths PreMan must never overwrite.
+#
+# Everything else under docs/ is generated from the API contract on every
+# release, so anything hand-written outside this list will be replaced without
+# warning. PreMan reads this file from the repository root before it writes,
+# reports what it left alone in the pull request body, and always protects
+# .fernignore itself.
+
+# The landing page. PreMan emits a generic one for repositories that have no
+# docs site yet; this repository has a real one.
+docs/index.md
+
+# Hand-written narrative that has no equivalent in an OpenAPI document.
+docs/getting-started.md
