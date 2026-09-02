@@ -1,8 +1,8 @@
-# authentication
+# Authentication
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
-## Change your password
+## Change the current user's password
 
 `POST /api/v1/auth/change-password`
 
@@ -44,11 +44,11 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 ---
 
-## Start password recovery
+## Request a password reset
 
 `POST /api/v1/auth/forgot-password`
 
-Starts the forgotten-password flow for a user.
+Starts the forgot-password process for a user.
 
 **Request body** (required) — `application/json`
 
@@ -86,7 +86,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 ---
 
-## Log in
+## Log in a user
 
 `POST /api/v1/auth/login`
 
@@ -139,7 +139,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 ---
 
-## Log out
+## Log out the current user
 
 `POST /api/v1/auth/logout`
 
@@ -172,11 +172,11 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 ---
 
-## Get your profile
+## Get the current user
 
 `GET /api/v1/auth/me`
 
-Returns the authenticated user's profile.
+Retrieves information about the authenticated user.
 
 **Responses**
 
@@ -205,11 +205,11 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 ---
 
-## Update your profile
+## Update the current user
 
 `PATCH /api/v1/auth/me`
 
-Updates the authenticated user's profile.
+Updates information for the authenticated user.
 
 **Request body** (required) — `application/json`
 
@@ -255,7 +255,7 @@ curl -X PATCH 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.
 
 `POST /api/v1/auth/refresh`
 
-Refreshes the current authentication session.
+Refreshes the current authentication session or credentials.
 
 **Request body** (required) — `application/json`
 
@@ -307,7 +307,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `POST /api/v1/auth/register`
 
-Registers a new user.
+Creates a user account.
 
 **Request body** (required) — `application/json`
 

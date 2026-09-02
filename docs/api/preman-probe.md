@@ -1,12 +1,12 @@
-# preman_probe
+# Preman probe
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
-## Get a discount
+## Get the discount probe result
 
 `GET /api/v1/preman-probe/discount`
 
-Returns discount information from the Preman probe.
+Retrieves discount information from the Preman probe.
 
 **Query parameters**
 
@@ -39,11 +39,11 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 ---
 
-## Get an order total
+## Get the order total probe result
 
 `GET /api/v1/preman-probe/order-total`
 
-Returns order total information from the Preman probe.
+Retrieves order total information from the Preman probe.
 
 **Responses**
 
@@ -70,11 +70,11 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 ---
 
-## Get a refund status
+## Get the refund status probe result
 
 `GET /api/v1/preman-probe/refund-status`
 
-Returns refund status information from the Preman probe.
+Retrieves refund status information from the Preman probe.
 
 **Responses**
 
@@ -102,11 +102,11 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 ---
 
-## Get a shipping estimate
+## Get the shipping estimate probe result
 
 `GET /api/v1/preman-probe/shipping-estimate`
 
-Returns shipping estimate information from the Preman probe.
+Retrieves shipping estimate information from the Preman probe.
 
 **Responses**
 

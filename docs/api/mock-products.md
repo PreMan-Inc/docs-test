@@ -1,4 +1,4 @@
-# mock_products
+# Mock products
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
@@ -6,7 +6,7 @@ Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
 `GET /api/v1/mock/products`
 
-Returns the mock product collection.
+Retrieves the mock product collection.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -63,7 +63,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/mock/products`
 
-Creates a product in the mock product collection.
+Adds a product to the mock product collection.
 
 **Request body** (required) — `application/json`
 
@@ -120,7 +120,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/mock/products/{item_id}`
 
-Returns the mock product identified by the item ID.
+Retrieves the mock product identified by the item ID.
 
 **Path parameters**
 

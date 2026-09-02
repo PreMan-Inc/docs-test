@@ -1,4 +1,4 @@
-# tasks
+# Tasks
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
@@ -6,7 +6,7 @@ Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
 `GET /api/v1/projects/{project_id}/tasks`
 
-Returns the tasks associated with the specified project.
+Retrieves the tasks associated with the specified project.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -128,7 +128,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/tasks/{task_id}`
 
-Returns the task identified by the task ID.
+Retrieves the task identified by the task ID.
 
 **Path parameters**
 

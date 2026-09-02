@@ -1,4 +1,4 @@
-# mock_tickets
+# Mock tickets
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
@@ -6,7 +6,7 @@ Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
 `GET /api/v1/mock/tickets`
 
-Returns the mock ticket collection.
+Retrieves the mock ticket collection.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -62,7 +62,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/mock/tickets`
 
-Creates a ticket in the mock ticket collection.
+Adds a ticket to the mock ticket collection.
 
 **Request body** (required) — `application/json`
 
@@ -117,7 +117,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/mock/tickets/{item_id}`
 
-Returns the mock ticket identified by the item ID.
+Retrieves the mock ticket identified by the item ID.
 
 **Path parameters**
 

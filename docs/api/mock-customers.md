@@ -1,4 +1,4 @@
-# mock_customers
+# Mock customers
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
@@ -6,7 +6,7 @@ Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
 `GET /api/v1/mock/customers`
 
-Returns the mock customer collection.
+Retrieves the mock customer collection.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -62,7 +62,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/mock/customers`
 
-Creates a customer in the mock customer collection.
+Adds a customer to the mock customer collection.
 
 **Request body** (required) — `application/json`
 
@@ -115,7 +115,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/mock/customers/{item_id}`
 
-Returns the mock customer identified by the item ID.
+Retrieves the mock customer identified by the item ID.
 
 **Path parameters**
 
