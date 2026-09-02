@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.1 — from 0.1.0
+## 0.2.1 — from 0.2.0
 
 !!! success "No breaking changes"
     Code written against the previous version keeps working.
@@ -18,6 +18,7 @@ Change level: **patch**
 | patch | `POST /api/v1/auth/register` | documentation only |
 | patch | `POST /api/v1/auth/reset-password` | documentation only |
 | patch | `PATCH /api/v1/auth/me` | documentation only |
+| patch | `GET /` | documentation only |
 | patch | `POST /api/v1/mock/customers` | documentation only |
 | patch | `DELETE /api/v1/mock/customers/{item_id}` | documentation only |
 | patch | `GET /api/v1/mock/customers/{item_id}` | documentation only |

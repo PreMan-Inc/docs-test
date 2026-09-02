@@ -1,12 +1,12 @@
-# Authentication
+# authentication
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
-## Change the current user's password
+## Change your password
 
 `POST /api/v1/auth/change-password`
 
-Changes the password for the authenticated user
+Changes the password for the authenticated user.
 
 **Request body** (required) — `application/json`
 
@@ -44,11 +44,11 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 ---
 
-## Request a password reset
+## Start password recovery
 
 `POST /api/v1/auth/forgot-password`
 
-Starts the password recovery process for a forgotten password
+Starts the forgotten-password flow for a user.
 
 **Request body** (required) — `application/json`
 
@@ -86,11 +86,11 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 ---
 
-## Log in a user
+## Log in
 
 `POST /api/v1/auth/login`
 
-Authenticates a user
+Authenticates a user.
 
 **Request body** (required) — `application/json`
 
@@ -139,11 +139,11 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 ---
 
-## Log out the current user
+## Log out
 
 `POST /api/v1/auth/logout`
 
-Ends the current user's authenticated session
+Logs out the authenticated user.
 
 **Request body** (required) — `application/json`
 
@@ -172,11 +172,11 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 ---
 
-## Get the current user
+## Get your profile
 
 `GET /api/v1/auth/me`
 
-Retrieves information about the authenticated user
+Returns the authenticated user's profile.
 
 **Responses**
 
@@ -205,11 +205,11 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 ---
 
-## Update the current user
+## Update your profile
 
 `PATCH /api/v1/auth/me`
 
-Updates information for the authenticated user
+Updates the authenticated user's profile.
 
 **Request body** (required) — `application/json`
 
@@ -255,7 +255,7 @@ curl -X PATCH 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.
 
 `POST /api/v1/auth/refresh`
 
-Refreshes the current authentication
+Refreshes the current authentication session.
 
 **Request body** (required) — `application/json`
 
@@ -307,7 +307,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `POST /api/v1/auth/register`
 
-Registers a new user
+Registers a new user.
 
 **Request body** (required) — `application/json`
 
@@ -361,7 +361,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `POST /api/v1/auth/reset-password`
 
-Resets a user's password
+Resets a user's password.
 
 **Request body** (required) — `application/json`
 

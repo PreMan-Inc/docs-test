@@ -1,4 +1,4 @@
-# Mock customers
+# mock_customers
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
@@ -6,7 +6,7 @@ Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
 `GET /api/v1/mock/customers`
 
-Retrieves the mock customer collection
+Returns the mock customer collection.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -18,6 +18,7 @@ Retrieves the mock customer collection
 | `limit` | integer | no | — |
 | `offset` | integer | no | — |
 | `q` | string or null | no | — |
+| `region` | string | yes | — |
 | `sort` | string or null | no | — |
 
 **Responses**
@@ -61,7 +62,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/mock/customers`
 
-Creates a customer in the mock customer collection
+Creates a customer in the mock customer collection.
 
 **Request body** (required) — `application/json`
 
@@ -114,7 +115,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/mock/customers/{item_id}`
 
-Retrieves the mock customer identified by the item ID
+Returns the mock customer identified by the item ID.
 
 **Path parameters**
 
@@ -157,7 +158,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `PUT /api/v1/mock/customers/{item_id}`
 
-Replaces the mock customer identified by the item ID
+Replaces the mock customer identified by the item ID.
 
 **Path parameters**
 
@@ -217,7 +218,7 @@ curl -X PUT 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `PATCH /api/v1/mock/customers/{item_id}`
 
-Updates the mock customer identified by the item ID
+Updates the mock customer identified by the item ID.
 
 **Path parameters**
 
@@ -277,7 +278,7 @@ curl -X PATCH 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.
 
 `DELETE /api/v1/mock/customers/{item_id}`
 
-Deletes the mock customer identified by the item ID
+Deletes the mock customer identified by the item ID.
 
 **Path parameters**
 

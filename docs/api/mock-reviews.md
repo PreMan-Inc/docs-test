@@ -1,4 +1,4 @@
-# Mock reviews
+# mock_reviews
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
@@ -6,7 +6,7 @@ Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
 `GET /api/v1/mock/reviews`
 
-Retrieves the mock review collection
+Returns the mock review collection.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -61,7 +61,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/mock/reviews`
 
-Creates a review in the mock review collection
+Creates a review in the mock review collection.
 
 **Request body** (required) — `application/json`
 
@@ -114,7 +114,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/mock/reviews/{item_id}`
 
-Retrieves the mock review identified by the item ID
+Returns the mock review identified by the item ID.
 
 **Path parameters**
 
@@ -157,7 +157,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `PUT /api/v1/mock/reviews/{item_id}`
 
-Replaces the mock review identified by the item ID
+Replaces the mock review identified by the item ID.
 
 **Path parameters**
 
@@ -217,7 +217,7 @@ curl -X PUT 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `PATCH /api/v1/mock/reviews/{item_id}`
 
-Updates the mock review identified by the item ID
+Updates the mock review identified by the item ID.
 
 **Path parameters**
 
@@ -277,7 +277,7 @@ curl -X PATCH 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.
 
 `DELETE /api/v1/mock/reviews/{item_id}`
 
-Deletes the mock review identified by the item ID
+Deletes the mock review identified by the item ID.
 
 **Path parameters**
 

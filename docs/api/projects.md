@@ -1,4 +1,4 @@
-# Projects
+# projects
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
@@ -6,7 +6,7 @@ Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
 `GET /api/v1/projects`
 
-Retrieves the project collection
+Returns the project collection.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -59,7 +59,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/projects`
 
-Creates a new project
+Creates a project.
 
 **Request body** (required) — `application/json`
 
@@ -108,7 +108,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/projects/`
 
-Retrieves the project collection
+Returns the project collection.
 
 **Responses**
 
@@ -128,7 +128,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/projects/`
 
-Creates a new project
+Creates a project.
 
 **Request body** (required) — `application/json`
 
@@ -166,7 +166,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/projects/{project_id}`
 
-Retrieves the project identified by the project ID
+Returns the project identified by the project ID.
 
 **Path parameters**
 
@@ -207,7 +207,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `PUT /api/v1/projects/{project_id}`
 
-Replaces the project identified by the project ID
+Replaces the project identified by the project ID.
 
 **Path parameters**
 
@@ -262,7 +262,7 @@ curl -X PUT 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `PATCH /api/v1/projects/{project_id}`
 
-Updates the project identified by the project ID
+Updates the project identified by the project ID.
 
 **Path parameters**
 
@@ -317,7 +317,7 @@ curl -X PATCH 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.
 
 `DELETE /api/v1/projects/{project_id}`
 
-Deletes the project identified by the project ID
+Deletes the project identified by the project ID.
 
 **Path parameters**
 
