@@ -1,14 +1,16 @@
 # Changelog
 
-## 0.2.1 — from 0.2.0
+## 0.3.0 — from 0.2.0
 
-!!! success "No breaking changes"
-    Code written against the previous version keeps working.
+!!! danger "1 breaking change"
+    Code written against the previous version needs updating before
+    it will work against this one. The changes are listed first below.
 
-Change level: **patch**
+Change level: **major**
 
 | Severity | Operation | What changed |
 | --- | --- | --- |
+| major | `GET /api/v1/mock/orders` | new required query parameter 'region' |
 | patch | `POST /api/v1/auth/change-password` | documentation only |
 | patch | `POST /api/v1/auth/forgot-password` | documentation only |
 | patch | `GET /api/v1/auth/me` | documentation only |
@@ -18,7 +20,6 @@ Change level: **patch**
 | patch | `POST /api/v1/auth/register` | documentation only |
 | patch | `POST /api/v1/auth/reset-password` | documentation only |
 | patch | `PATCH /api/v1/auth/me` | documentation only |
-| patch | `GET /` | documentation only |
 | patch | `POST /api/v1/mock/customers` | documentation only |
 | patch | `DELETE /api/v1/mock/customers/{item_id}` | documentation only |
 | patch | `GET /api/v1/mock/customers/{item_id}` | documentation only |
@@ -28,7 +29,6 @@ Change level: **patch**
 | patch | `POST /api/v1/mock/orders` | documentation only |
 | patch | `DELETE /api/v1/mock/orders/{item_id}` | documentation only |
 | patch | `GET /api/v1/mock/orders/{item_id}` | documentation only |
-| patch | `GET /api/v1/mock/orders` | documentation only |
 | patch | `PUT /api/v1/mock/orders/{item_id}` | documentation only |
 | patch | `PATCH /api/v1/mock/orders/{item_id}` | documentation only |
 | patch | `POST /api/v1/mock/products` | documentation only |

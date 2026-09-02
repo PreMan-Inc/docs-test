@@ -1,4 +1,4 @@
-# mock_orders
+# Mock orders
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
@@ -6,7 +6,7 @@ Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
 `GET /api/v1/mock/orders`
 
-Returns the mock order collection.
+Retrieves the mock order collection.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -18,6 +18,7 @@ Returns the mock order collection.
 | `limit` | integer | no | — |
 | `offset` | integer | no | — |
 | `q` | string or null | no | — |
+| `region` | string | yes | — |
 | `sort` | string or null | no | — |
 
 **Responses**
@@ -67,7 +68,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/mock/orders`
 
-Creates an order in the mock order collection.
+Adds an order to the mock order collection.
 
 **Request body** (required) — `application/json`
 
@@ -131,7 +132,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/mock/orders/{item_id}`
 
-Returns the mock order identified by the item ID.
+Retrieves the mock order identified by the item ID.
 
 **Path parameters**
 

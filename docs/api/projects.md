@@ -1,4 +1,4 @@
-# projects
+# Projects
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
@@ -6,7 +6,7 @@ Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
 `GET /api/v1/projects`
 
-Returns the project collection.
+Retrieves the project collection.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -59,7 +59,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/projects`
 
-Creates a project.
+Adds a project to the project collection.
 
 **Request body** (required) — `application/json`
 
@@ -108,7 +108,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/projects/`
 
-Returns the project collection.
+Retrieves the project collection.
 
 **Responses**
 
@@ -128,7 +128,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/projects/`
 
-Creates a project.
+Adds a project to the project collection.
 
 **Request body** (required) — `application/json`
 
@@ -166,7 +166,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/projects/{project_id}`
 
-Returns the project identified by the project ID.
+Retrieves the project identified by the project ID.
 
 **Path parameters**
 

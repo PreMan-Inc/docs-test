@@ -1,12 +1,10 @@
-# default
+# Default
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
-## Get the API root
+## GET /
 
 `GET /`
-
-Returns the root API resource.
 
 **Responses**
 

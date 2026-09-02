@@ -23,7 +23,7 @@ client = Client(
 
 ## Make a call
 
-`GET /` — Get the API root
+`GET /` — GET /
 
 ```python
 response = client.root()

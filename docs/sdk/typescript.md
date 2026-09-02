@@ -21,7 +21,7 @@ const client = new Client({
 
 ## Make a call
 
-`GET /` — Get the API root
+`GET /` — GET /
 
 ```typescript
 const response = await client.root();
