@@ -1,4 +1,4 @@
-# Mock tickets
+# mock_tickets
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
@@ -6,7 +6,7 @@ Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
 `GET /api/v1/mock/tickets`
 
-Retrieves the mock ticket collection
+Returns the mock ticket collection.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -62,7 +62,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `POST /api/v1/mock/tickets`
 
-Creates a ticket in the mock ticket collection
+Creates a ticket in the mock ticket collection.
 
 **Request body** (required) — `application/json`
 
@@ -117,7 +117,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/mock/tickets/{item_id}`
 
-Retrieves the mock ticket identified by the item ID
+Returns the mock ticket identified by the item ID.
 
 **Path parameters**
 
@@ -161,7 +161,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `PUT /api/v1/mock/tickets/{item_id}`
 
-Replaces the mock ticket identified by the item ID
+Replaces the mock ticket identified by the item ID.
 
 **Path parameters**
 
@@ -223,7 +223,7 @@ curl -X PUT 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `PATCH /api/v1/mock/tickets/{item_id}`
 
-Updates the mock ticket identified by the item ID
+Updates the mock ticket identified by the item ID.
 
 **Path parameters**
 
@@ -285,7 +285,7 @@ curl -X PATCH 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.
 
 `DELETE /api/v1/mock/tickets/{item_id}`
 
-Deletes the mock ticket identified by the item ID
+Deletes the mock ticket identified by the item ID.
 
 **Path parameters**
 

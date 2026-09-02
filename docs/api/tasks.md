@@ -1,12 +1,12 @@
-# Tasks
+# tasks
 
 Base URL: `https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aws`
 
-## List tasks for a project
+## List project tasks
 
 `GET /api/v1/projects/{project_id}/tasks`
 
-Retrieves the tasks associated with the identified project
+Returns the tasks associated with the specified project.
 
 !!! info "Paginated"
     This endpoint pages: advance `$request.offset` to page through `$.items`.
@@ -64,11 +64,11 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 ---
 
-## Create a task for a project
+## Create a project task
 
 `POST /api/v1/projects/{project_id}/tasks`
 
-Creates a task under the identified project
+Creates a task for the specified project.
 
 **Path parameters**
 
@@ -128,7 +128,7 @@ curl -X POST 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.a
 
 `GET /api/v1/tasks/{task_id}`
 
-Retrieves the task identified by the task ID
+Returns the task identified by the task ID.
 
 **Path parameters**
 
@@ -172,7 +172,7 @@ curl -X GET 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `PUT /api/v1/tasks/{task_id}`
 
-Replaces the task identified by the task ID
+Replaces the task identified by the task ID.
 
 **Path parameters**
 
@@ -232,7 +232,7 @@ curl -X PUT 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.aw
 
 `PATCH /api/v1/tasks/{task_id}`
 
-Updates the task identified by the task ID
+Updates the task identified by the task ID.
 
 **Path parameters**
 
@@ -292,7 +292,7 @@ curl -X PATCH 'https://xixoo2yundjxsbdwl3iw2eg5hi0ckwfu.lambda-url.us-east-1.on.
 
 `DELETE /api/v1/tasks/{task_id}`
 
-Deletes the task identified by the task ID
+Deletes the task identified by the task ID.
 
 **Path parameters**
 
